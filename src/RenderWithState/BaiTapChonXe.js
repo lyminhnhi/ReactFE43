@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 export default class BaiTapChonXe extends Component {
 
-    // cach 1
+    //
     state = {
         srcImg: "./img/black-car.jpg"
     }
 
-    // cach 2
+    // 
     changeColor = (color) => {
         let imgColor = `./img/${color}-car.jpg`;
         
@@ -39,6 +39,8 @@ export default class BaiTapChonXe extends Component {
                                     <img className="w-50" src="./img/icon-black.jpg" alt="aaa"></img>
                                 </button>
                             </div>
+
+                                {/* ----------------------------------------------------------- */}
 
                             <div className="col-3">
                                 {/* cach 2 */}

@@ -7,6 +7,8 @@ import EventBinding from './Event_Binding/EventBinding';
 import RenderWithState from './RenderWithState/RenderWithState';
 import BaiTapChonXe from './RenderWithState/BaiTapChonXe';
 import RenderWithMap from './RenderWithMap/RenderWithMap';
+import BTChonKieng from './BaiTapChonKieng/BTChonKieng';
+import Props from './Props/Props';
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
       {/* <BT3DanLayout/> */}
       {/* <EventBinding/> */}
       {/* <RenderWithState/> */}
-      {/* <BaiTapChonXe></BaiTapChonXe> */}
-      <RenderWithMap></RenderWithMap>
+      <BaiTapChonXe></BaiTapChonXe>
+      {/* <RenderWithMap></RenderWithMap> */}
+      {/* <BTChonKieng></BTChonKieng> */}
+      {/* <Props></Props> */}
     </div>
   );
 }
