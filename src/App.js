@@ -9,6 +9,8 @@ import BaiTapChonXe from './RenderWithState/BaiTapChonXe';
 import RenderWithMap from './RenderWithMap/RenderWithMap';
 import BTChonKieng from './BaiTapChonKieng/BTChonKieng';
 import Props from './Props/Props';
+import ExempleCard from './LiftingUpState/ExempleCard';
+
 
 function App() {
   return (
@@ -16,10 +18,11 @@ function App() {
       {/* <BT3DanLayout/> */}
       {/* <EventBinding/> */}
       {/* <RenderWithState/> */}
-      <BaiTapChonXe></BaiTapChonXe>
+      {/* <BaiTapChonXe></BaiTapChonXe> */}
       {/* <RenderWithMap></RenderWithMap> */}
       {/* <BTChonKieng></BTChonKieng> */}
       {/* <Props></Props> */}
+      <ExempleCard/>
     </div>
   );
 }

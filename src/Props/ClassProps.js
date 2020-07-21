@@ -1,19 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class ClassProps extends Component {
-
-    render() {
-        return (
-            <div>
-                <div className="card text-left">
-                    <img className="card-img-top mt-5" src={this.props.cho.con} alt 
-                    style={{width:"300px"}}/>
-                    <div className="card-body">
-                        <h4 className="card-title">Title</h4>
-                        <p className="card-text">Body</p>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+  render() {
+    const { image, name, age } = this.props.cho;
+    return (
+      <div>
+        <h2>StateFull Component</h2>
+        <div className="card text-left">
+          {/* nhận props image từ component DemoProps */}
+          <img
+            className="card-img-top"
+            src={image}
+            alt="asdsa"
+            style={{ width: "300px" }}
+          />
+          <div className="card-body">
+            <h4 className="card-title">{name}</h4>
+            <p className="card-text">{age}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }

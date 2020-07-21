@@ -1,21 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import ClassProps from "./ClassProps";
+import FunctionProps from "./FunctionProps";
+export default class DemoProps extends Component {
+  render() {
+    const dog = {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZmMWc_yStWGkauDJ73H0sUEZYwh0tbwaxJw&usqp=CAU",
+      name: "husky",
+      age: 3,
+    };
 
-export default class Props extends Component {
+    const cat = {
+      srcImg:
+        "https://pethealth.vn/wp-content/uploads/2018/09/c%C3%A1ch-nu%C3%B4i-m%C3%A8o-t%E1%BB%AB-chuy%C3%AAn-gia.jpg",
+      name: "mimi",
+      age: 5,
+    };
 
-    render() {
-        const dog = {
-            con:"./img/sp_iphoneX.png",
-            name: "Quyen",
-            age: 2
-        }
-
-        return (
-            <div>
-                <ClassProps cho={dog}></ClassProps>
-            </div>
-        )
-    }
+    return (
+      <div className="text-center">
+        <h1>Demo Props</h1>
+        {/* truyền props image cho component Classprops */}
+        <ClassProps cho={dog} />
+        <FunctionProps meo={cat} />
+      </div>
+    );
+  }
 }
-
-
