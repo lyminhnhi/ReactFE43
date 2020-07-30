@@ -16,7 +16,7 @@ export default class ExempleCard extends Component {
 
 
     handleBuy = (card) => {
-        console.log(card)
+        
         let cardUpdate = [...this.state.cardList];
 
         //tìm phần tử trong mảng
@@ -26,9 +26,7 @@ export default class ExempleCard extends Component {
         } else {
             card.soluong = 1
             cardUpdate = [...cardUpdate, card]
-        }
-
-
+        };
 
         this.setState({
             cardList: cardUpdate
@@ -63,7 +61,7 @@ export default class ExempleCard extends Component {
                             //các Props cha để truyền
                             Quyen={this.handleSelecpro}
                             proList={this.state.proList}
-                            QuyenMuaDo={this.handleBuy}
+                            handleBuy={this.handleBuy}
                         />
 
                         {this.state.proSelected ?

@@ -13,7 +13,7 @@ export default function Product(props) {
                     <h4 className="card-title">{tenSP}</h4>
                     <button className="btn btn-success" onClick={() => NhanQuyen(item)
                     }>Chi tiết</button>
-                    <button type="button" className="btn btn-danger" onClick={() => {props.QuyenMuaDoRoi(item)}}>Mua</button>
+                    <button type="button" className="btn btn-danger" onClick={() => {props.handleBuy(item)}}>Mua</button>
                 </div>
             </div>
         </div>

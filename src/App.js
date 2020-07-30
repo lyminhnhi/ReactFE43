@@ -10,6 +10,9 @@ import RenderWithMap from './RenderWithMap/RenderWithMap';
 import BTChonKieng from './BaiTapChonKieng/BTChonKieng';
 import Props from './Props/Props';
 import ExempleCard from './LiftingUpState/ExempleCard';
+import BaiTapGioHang from "./BaiTapRedux/BaiTapGioHang/BaiTapGioHang";
+import IndexGame from './BaiTapRedux/Game_BauCua/IndexGame';
+
 
 
 function App() {
@@ -22,7 +25,9 @@ function App() {
       {/* <RenderWithMap></RenderWithMap> */}
       {/* <BTChonKieng></BTChonKieng> */}
       {/* <Props></Props> */}
-      <ExempleCard/>
+      {/* <ExempleCard/> */}
+      {/* <BaiTapGioHang/> */}
+      <IndexGame/>
     </div>
   );
 }

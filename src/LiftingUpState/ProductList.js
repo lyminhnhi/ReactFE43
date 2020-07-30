@@ -8,7 +8,7 @@ export default class ProductList extends Component {
             return (
                 <div className="col-sm-4" key={index}>
                     <Product NhanQuyen={this.props.Quyen} item={item}
-                    QuyenMuaDoRoi={this.props.QuyenMuaDo}/>
+                    handleBuy={this.props.handleBuy}/>
                 </div>
             )
         })
