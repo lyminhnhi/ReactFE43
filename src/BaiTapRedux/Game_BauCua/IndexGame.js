@@ -18,9 +18,7 @@ class IndexGame extends Component {
                             </div>
                             <h2 className="text-center text-danger">Bầu Cua</h2>
                             <div><btn className="btn btn-info" 
-                            onClick={() => {
-                                    this.props.choiGame();
-                                }}>Chơi Game</btn></div>
+                            onClick={() => {this.props.choiGame();}}>Chơi Game</btn></div>
                         </div>
                         <div className="row">
                                 <DanhSachCuoc/>
@@ -53,3 +51,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(IndexGame);
+

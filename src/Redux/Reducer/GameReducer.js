@@ -18,7 +18,7 @@ const initialState = {
 }
 
 
-const GameReducer = (state = initialState, action) => {
+const GameBauCuaReducer = (state = initialState, action) => {
     switch (action.type) {
         case "tang_giam":
             console.log(action);
@@ -82,4 +82,4 @@ const GameReducer = (state = initialState, action) => {
     return { ...state };
 }
 
-export default GameReducer;
+export default GameBauCuaReducer;

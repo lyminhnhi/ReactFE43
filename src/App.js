@@ -12,6 +12,9 @@ import Props from './Props/Props';
 import ExempleCard from './LiftingUpState/ExempleCard';
 import BaiTapGioHang from "./BaiTapRedux/BaiTapGioHang/BaiTapGioHang";
 import IndexGame from './BaiTapRedux/Game_BauCua/IndexGame';
+import Form_validation from './Form_Validation/Form_validation';
+import QLSinhVien from './Form_Validation/QLSinhVien';
+import Lifecycle from './React_Lifecycle/Lifecycle';
 
 
 
@@ -27,7 +30,10 @@ function App() {
       {/* <Props></Props> */}
       {/* <ExempleCard/> */}
       {/* <BaiTapGioHang/> */}
-      <IndexGame/>
+      {/* <IndexGame/> */}
+      {/* <Form_validation/> */}
+      <QLSinhVien/>
+      {/* <Lifecycle/> */}
     </div>
   );
 }
